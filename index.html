@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giuseppe Bianco — Data Analyst | Marketing &amp; Revenue Analytics</title>
+  <meta name="description" content="Portfolio di Giuseppe Bianco, Data Analyst specializzato in marketing e revenue analytics. Power BI, SQL, Python, dashboard e automazione della reportistica.">
+
+  <!-- Font: Space Grotesk per i titoli, Inter per il testo, IBM Plex Mono per numeri/dati/tag -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Skip link per accessibilità da tastiera -->
+  <a href="#main" class="skip-link">Vai al contenuto</a>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Torna in cima alla pagina">Giuseppe Bianco - Data analyst<span class="logo-dot">.</span></a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigazione principale">
+        <ul>
+          <li><a href="#chi-sono" class="nav-link">Chi sono</a></li>
+          <li><a href="#competenze" class="nav-link">Competenze</a></li>
+          <li><a href="#progetti" class="nav-link">Progetti</a></li>
+          <li><a href="#esperienza" class="nav-link">Esperienza</a></li>
+          <li><a href="#contatti" class="nav-link nav-cta">Contatti</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Apri il menu di navigazione">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow reveal">Data Analyst · Marketing &amp; Revenue Analytics</p>
+          <h1 class="reveal">Giuseppe Bianco</h1>
+          <p class="hero-lead reveal">Trasformo funnel di marketing e dati di revenue in dashboard che il management legge in un colpo d'occhio.</p>
+          <p class="hero-sub reveal">Due anni di esperienza tra Power BI, SQL e Python — con un master in corso in AI applicata al business per andare oltre il reporting.</p>
+
+          <div class="hero-cta reveal">
+            <a href="#progetti" class="btn btn-primary">Guarda i progetti</a>
+            <a href="#contatti" class="btn btn-ghost">Scrivimi</a>
+          </div>
+
+          <dl class="hero-kpis reveal">
+            <div class="kpi">
+              <dt class="kpi-value" data-count="3" data-suffix="M €+">0</dt>
+              <dd>spesa advertising monitorata</dd>
+            </div>
+            <div class="kpi">
+              <dt class="kpi-value" data-count="75" data-prefix="-" data-suffix="%">0</dt>
+              <dd>tempo dedicato al reporting</dd>
+            </div>
+            <div class="kpi">
+              <dt class="kpi-value" data-count="2" data-suffix=" anni">0</dt>
+              <dd>di esperienza in data analysis</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Grafico animato: il "segno distintivo" della pagina, coerente col lavoro reale di Giuseppe -->
+        <div class="hero-visual" aria-hidden="true">
+          <svg class="hero-chart" viewBox="0 0 440 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- griglia di sfondo tipo dashboard -->
+            <g class="chart-grid" stroke="var(--color-line)" stroke-width="1">
+              <line x1="40" y1="40" x2="40" y2="280"></line>
+              <line x1="40" y1="280" x2="400" y2="280"></line>
+              <line x1="40" y1="220" x2="400" y2="220" stroke-dasharray="2 6"></line>
+              <line x1="40" y1="160" x2="400" y2="160" stroke-dasharray="2 6"></line>
+              <line x1="40" y1="100" x2="400" y2="100" stroke-dasharray="2 6"></line>
+            </g>
+
+            <!-- area sotto la curva -->
+            <path class="chart-area" d="M40,240 L100,210 L160,225 L220,150 L280,170 L340,90 L400,70 L400,280 L40,280 Z" fill="url(#areaGradient)"></path>
+
+            <!-- linea principale, disegnata in stroke-dashoffset via CSS/JS -->
+            <path class="chart-line" d="M40,240 L100,210 L160,225 L220,150 L280,170 L340,90 L400,70" stroke="var(--color-teal)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+
+            <!-- punti dati -->
+            <g class="chart-dots" fill="var(--color-teal)">
+              <circle cx="40" cy="240" r="4"></circle>
+              <circle cx="100" cy="210" r="4"></circle>
+              <circle cx="160" cy="225" r="4"></circle>
+              <circle cx="220" cy="150" r="4"></circle>
+              <circle cx="280" cy="170" r="4"></circle>
+              <circle cx="340" cy="90" r="4"></circle>
+              <circle class="chart-dot-final" cx="400" cy="70" r="6"></circle>
+            </g>
+
+            <!-- etichette in stile KPI marketing, per radicare il grafico nel mestiere reale -->
+            <text x="220" y="135" class="chart-label">ROAS 4.2x</text>
+            <text x="340" y="75" class="chart-label">CPA -18%</text>
+
+            <defs>
+              <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="var(--color-teal)" stop-opacity="0.18"></stop>
+                <stop offset="100%" stop-color="var(--color-teal)" stop-opacity="0"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CHI SONO ===================== -->
+    <section class="section about" id="chi-sono">
+      <div class="container">
+        <p class="section-tag reveal">/ chi sono</p>
+        <h2 class="reveal">Dal reporting all'analisi predittiva, un progetto alla volta.</h2>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>Sono un Data Analyst con due anni di esperienza nell'analisi di dati di marketing, funnel di conversione e revenue. Lavoro ogni giorno con Power BI, Looker Studio e SQL per costruire dashboard che tengono sotto controllo i KPI commerciali e di advertising — ROAS, CPA, CPL — automatizzando la reportistica e traducendo i numeri in decisioni operative per il management.</p>
+            <p>Negli ultimi mesi ho iniziato ad applicare tecniche di machine learning — regressione, classificazione, clustering, time series forecasting — in progetti pratici con scikit-learn e XGBoost, approfondite attraverso il master in AI applicata al business che sto seguendo. È il passo che mi sta portando da un ruolo puramente di reporting verso l'analisi predittiva.</p>
+            <p>Cerco un ruolo di Data Analyst o Marketing Analyst, da remoto, in ibrido o in sede in Calabria, con un percorso di crescita verso posizioni più orientate alla data science.</p>
+          </div>
+
+          <dl class="about-facts reveal">
+            <div class="fact-row">
+              <dt>Sede</dt>
+              <dd>Castrovillari (CS) — disponibile in sede in Calabria, ibrido o full remote</dd>
+            </div>
+            <div class="fact-row">
+              <dt>Lingue</dt>
+              <dd>Italiano (madrelingua), Inglese (B1), Francese (B1)</dd>
+            </div>
+            <div class="fact-row">
+              <dt>In corso</dt>
+              <dd>Master in AI &amp; Agenti AI per il Business — UniMarconi × start2impact</dd>
+            </div>
+            <div class="fact-row">
+              <dt>Obiettivo</dt>
+              <dd>Data Analyst / Marketing Analyst → percorso verso ruoli data science-oriented</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMPETENZE ===================== -->
+    <section class="section skills" id="competenze">
+      <div class="container">
+        <p class="section-tag reveal">/ competenze</p>
+        <h2 class="reveal">Stack e strumenti che uso davvero.</h2>
+
+        <div class="skills-grid">
+
+          <article class="skill-card reveal">
+            <h3><span class="skill-index">SQL·PY</span>Data Analysis &amp; Programming</h3>
+            <ul class="tag-list">
+              <li>SQL avanzato</li>
+              <li>Window functions &amp; CTE</li>
+              <li>Python</li>
+              <li>pandas / numpy / polars</li>
+              <li>matplotlib / seaborn / plotly</li>
+              <li>Data cleaning &amp; transformation</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3><span class="skill-index">BI</span>Business Intelligence &amp; Viz</h3>
+            <ul class="tag-list">
+              <li>Power BI</li>
+              <li>DAX &amp; Power Query</li>
+              <li>Tableau</li>
+              <li>Looker Studio</li>
+              <li>Executive dashboarding</li>
+              <li>Reporting automation</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3><span class="skill-index">DB</span>Database &amp; Tools</h3>
+            <ul class="tag-list">
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
+              <li>Excel avanzato</li>
+              <li>Google Analytics 4</li>
+              <li>Git / GitHub</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3><span class="skill-index">AI</span>AI &amp; Machine Learning <span class="badge">in formazione</span></h3>
+            <ul class="tag-list">
+              <li>scikit-learn</li>
+              <li>XGBoost</li>
+              <li>Prompt engineering</li>
+              <li>Integrazione LLM via API</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3><span class="skill-index">MKT</span>Marketing &amp; Advertising Analytics</h3>
+            <ul class="tag-list">
+              <li>ROAS</li>
+              <li>CPA</li>
+              <li>CPL</li>
+              <li>Funnel di conversione</li>
+              <li>Ottimizzazione spesa adv</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROGETTI ===================== -->
+    <section class="section projects" id="progetti">
+      <div class="container">
+        <p class="section-tag reveal">/ progetti</p>
+        <h2 class="reveal">Un paio di cose che ho costruito.</h2>
+        <p class="section-intro reveal">Altri progetti — inclusa una raccolta di analisi in Excel — sono in lavorazione e arriveranno su GitHub a breve.</p>
+
+        <div class="projects-grid">
+
+          <!-- PROGETTO 1 — Power BI -->
+          <article class="project-card reveal">
+            <div class="project-visual">
+              <!-- Placeholder grafico: da sostituire con screenshot reale in assets/img/powerbi-analisi-finanziaria.png -->
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect width="400" height="220" fill="var(--color-bg-alt)"></rect>
+                <g stroke="var(--color-line)" stroke-width="1">
+                  <line x1="30" y1="30" x2="30" y2="180"></line>
+                  <line x1="30" y1="180" x2="370" y2="180"></line>
+                </g>
+                <g fill="var(--color-teal)">
+                  <rect x="55" y="110" width="34" height="70"></rect>
+                  <rect x="110" y="80" width="34" height="100"></rect>
+                  <rect x="165" y="130" width="34" height="50"></rect>
+                </g>
+                <g fill="var(--color-amber)">
+                  <rect x="220" y="60" width="34" height="120"></rect>
+                  <rect x="275" y="95" width="34" height="85"></rect>
+                  <rect x="330" y="45" width="34" height="135"></rect>
+                </g>
+                <line x1="30" y1="140" x2="370" y2="100" stroke="var(--color-ink)" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5"></line>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>Analisi Finanziaria e Revenue in Power BI</h3>
+              <p>Dashboard con modellazione dati avanzata, misure DAX personalizzate (margine reale, raggiungimento budget, scostamenti, simulazioni di prezzo, CAGR) e attività ETL per la gestione dei dati mancanti. Include una nota esplicativa sulle scelte progettuali e le criticità affrontate.</p>
+              <ul class="tag-list tag-list-compact">
+                <li>Power BI</li>
+                <li>DAX</li>
+                <li>Power Query</li>
+                <li>ETL</li>
+              </ul>
+              <a href="https://github.com/GiuseppeB-portfolio/powerbi-analisi-finanziaria" target="_blank" rel="noopener noreferrer" class="project-link">
+                Vedi su GitHub
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROGETTO 2 — AI Debug Assistant -->
+          <article class="project-card reveal">
+            <div class="project-visual">
+              <!-- Placeholder grafico: da sostituire con screenshot reale in assets/img/ai-debug-assistant.png -->
+              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect width="400" height="220" fill="var(--color-bg-alt)"></rect>
+                <rect x="30" y="30" width="340" height="160" rx="6" fill="var(--color-ink)"></rect>
+                <circle cx="48" cy="46" r="4" fill="var(--color-amber)"></circle>
+                <circle cx="62" cy="46" r="4" fill="var(--color-teal)"></circle>
+                <circle cx="76" cy="46" r="4" fill="var(--color-line)"></circle>
+                <g fill="none" stroke="var(--color-teal)" stroke-width="2" stroke-linecap="round">
+                  <line x1="48" y1="72" x2="150" y2="72"></line>
+                  <line x1="48" y1="90" x2="220" y2="90" opacity="0.6"></line>
+                  <line x1="48" y1="108" x2="120" y2="108" opacity="0.6"></line>
+                </g>
+                <g fill="none" stroke="var(--color-amber)" stroke-width="2" stroke-linecap="round">
+                  <line x1="48" y1="134" x2="260" y2="134"></line>
+                  <line x1="48" y1="152" x2="180" y2="152" opacity="0.7"></line>
+                </g>
+                <rect x="48" y="168" width="8" height="14" fill="#F1F3F1" class="cursor-blink"></rect>
+              </svg>
+            </div>
+            <div class="project-body">
+              <h3>AI Debug Assistant</h3>
+              <p>Applicazione che sfrutta l'API Gemini per trasformare frammenti di codice con errori in soluzioni chiare e spiegate: identifica errori di sintassi e logici, restituisce il codice corretto e motiva ogni modifica, con l'obiettivo di velocizzare troubleshooting e code review.</p>
+              <ul class="tag-list tag-list-compact">
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Gemini API</li>
+              </ul>
+              <a href="https://github.com/GiuseppeB-portfolio/Python-debud-assistant" target="_blank" rel="noopener noreferrer" class="project-link">
+                Vedi su GitHub
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ESPERIENZA / FORMAZIONE ===================== -->
+    <section class="section experience" id="esperienza">
+      <div class="container">
+        <p class="section-tag reveal">/ esperienza</p>
+        <h2 class="reveal">Percorso professionale.</h2>
+
+        <div class="ledger reveal">
+
+          <div class="ledger-row">
+            <div class="ledger-when">
+              <span class="ledger-period">Ott 2024 — in corso</span>
+            </div>
+            <div class="ledger-what">
+              <h3>Data Analyst</h3>
+              <p class="ledger-org">Scuola di Alta Formazione San Giuseppe Moscati</p>
+              <ul>
+                <li>Analisi di dati di marketing e revenue (lead, iscrizioni a webinar, fatturato), con focus su funnel di acquisizione e conversione.</li>
+                <li>Monitoraggio di oltre 3 milioni di euro di spesa in campagne advertising, con analisi di KPI chiave (ROAS, CPA, CPL, valore lead).</li>
+                <li>Dashboard interattive in Power BI e Looker Studio, con automazione della reportistica che ha ridotto il tempo di analisi giornaliero da circa 1 ora a 15 minuti (-75%).</li>
+                <li>Progettazione di una web app interna per l'automazione dell'analisi di fatturato, spesa adv e KPI di marketing tramite upload di CSV, realizzata con il supporto di strumenti AI (Claude) e in uso operativo in azienda.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="ledger-when">
+              <span class="ledger-period">Gen 2023 — Ago 2024</span>
+            </div>
+            <div class="ledger-what">
+              <h3>Data Analyst</h3>
+              <p class="ledger-org">Freelance</p>
+              <ul>
+                <li>Progetti di analisi dati per clienti e-commerce e servizi, con responsabilità end-to-end dall'estrazione dei dati alla presentazione degli insight.</li>
+                <li>Dashboard in Tableau e Power BI su KPI operativi, di marketing e di performance commerciale.</li>
+                <li>Trasformazione di dati da fonti eterogenee (database SQL, Excel, export CRM e tool analytics) tramite Python e SQL.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="ledger-when">
+              <span class="ledger-period">Gen 2022 — Dic 2022</span>
+            </div>
+            <div class="ledger-what">
+              <h3>Impiegato amministrativo-contabile</h3>
+              <p class="ledger-org">Studio commercialista</p>
+              <ul>
+                <li>Gestione e analisi di dataset contabili, con lavoro estensivo su Excel avanzato per analisi di scostamenti, pivot e lookup su dati finanziari reali.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <h3 class="education-title reveal">Formazione</h3>
+        <div class="ledger ledger-compact reveal">
+
+          <div class="ledger-row">
+            <div class="ledger-when"><span class="ledger-period">2025 — 2026, in corso</span></div>
+            <div class="ledger-what">
+              <h3>Master universitario di I livello — AI &amp; Agenti AI per il Business</h3>
+              <p class="ledger-org">UniMarconi, in collaborazione con start2impact</p>
+            </div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="ledger-when"><span class="ledger-period">2024</span></div>
+            <div class="ledger-what">
+              <h3>Certificazione Data Analyst</h3>
+              <p class="ledger-org">Epicode — corso part-time di 6 mesi + progetto finale (300 ore)</p>
+            </div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="ledger-when"><span class="ledger-period">2024</span></div>
+            <div class="ledger-what">
+              <h3>Certificazione Google Analytics</h3>
+              <p class="ledger-org">Google</p>
+            </div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="ledger-when"><span class="ledger-period">2022</span></div>
+            <div class="ledger-what">
+              <h3>Laurea in Economia Aziendale (L-18)</h3>
+              <p class="ledger-org">Università Telematica Pegaso</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATTI ===================== -->
+    <section class="section contact" id="contatti">
+      <div class="container contact-inner">
+        <p class="section-tag reveal">/ contatti</p>
+        <h2 class="reveal">Parliamone.</h2>
+        <p class="contact-lead reveal">Sono disponibile per ruoli di Data Analyst o Marketing Analyst, da remoto, ibrido o in sede in Calabria. Se un progetto o una posizione ti sembrano in linea, scrivimi.</p>
+
+        <div class="contact-links reveal">
+          <a href="mailto:giuseppebianco27@gmail.com" class="contact-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6.5L12 13L21 6.5M4.5 5H19.5C20.33 5 21 5.67 21 6.5V17.5C21 18.33 20.33 19 19.5 19H4.5C3.67 19 3 18.33 3 17.5V6.5C3 5.67 3.67 5 4.5 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>giuseppebianco27@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/giuseppe-bianco-data-analyst" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.5 8.5H4V19H6.5V8.5Z" fill="currentColor"/><circle cx="5.25" cy="5.5" r="1.5" fill="currentColor"/><path d="M9.5 8.5H11.9V9.8H11.94C12.28 9.16 13.1 8.5 14.34 8.5C17 8.5 17.5 10.16 17.5 12.36V19H15V12.86C15 11.66 14.98 10.12 13.28 10.12C11.56 10.12 11.3 11.42 11.3 12.78V19H8.8V8.5H9.5Z" fill="currentColor"/></svg>
+            <span>linkedin.com/in/giuseppe-bianco-data-analyst</span>
+          </a>
+          <a href="https://github.com/GiuseppeB-portfolio" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.19C2 16.68 4.87 20.47 8.84 21.8C9.34 21.89 9.52 21.58 9.52 21.31C9.52 21.07 9.51 20.32 9.51 19.44C7 19.94 6.35 18.79 6.15 18.19C6.04 17.9 5.55 16.99 5.12 16.75C4.77 16.55 4.27 16.05 5.11 16.04C5.9 16.03 6.46 16.79 6.65 17.1C7.55 18.65 8.97 18.2 9.54 17.93C9.63 17.26 9.89 16.8 10.17 16.55C7.95 16.3 5.62 15.42 5.62 11.53C5.62 10.42 5.99 9.51 6.67 8.8C6.56 8.55 6.23 7.52 6.76 6.14C6.76 6.14 7.61 5.87 9.52 7.19C10.32 6.96 11.17 6.85 12.02 6.85C12.87 6.85 13.72 6.96 14.52 7.19C16.43 5.86 17.28 6.14 17.28 6.14C17.81 7.52 17.48 8.55 17.37 8.8C18.05 9.51 18.42 10.41 18.42 11.53C18.42 15.43 16.08 16.3 13.86 16.55C14.21 16.86 14.52 17.47 14.52 18.41C14.52 19.75 14.51 20.97 14.51 21.31C14.51 21.58 14.69 21.9 15.19 21.8C19.13 20.46 22 16.68 22 12.19C22 6.58 17.52 2 12 2Z" fill="currentColor"/></svg>
+            <span>github.com/GiuseppeB-portfolio</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Giuseppe Bianco</p>
+      <p class="footer-note">Costruito a mano con HTML, CSS e JS — nessun framework.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
