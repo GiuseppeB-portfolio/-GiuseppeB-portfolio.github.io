@@ -9,7 +9,7 @@
 /* ----------------------------- 1. TOKEN ---------------------------------- */
 :root {
   /* Colori */
-  --color-bg: #F2F4F3;          /* sfondo pagina, carta chiara */
+  --color-bg: #f2f2f4c0;          /* sfondo pagina, carta chiara */
   --color-bg-alt: #E8ECEA;      /* pannelli / placeholder */
   --color-card: #FFFFFF;        /* superfici card */
   --color-ink: #10181A;         /* testo principale, quasi nero con base blu-verde */
