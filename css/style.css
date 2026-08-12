@@ -450,9 +450,15 @@ button:focus-visible {
 
 /* ----------------------------- 8. COMPETENZE -------------------------------- */
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
+}
+
+.skill-card {
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
 }
 
 .skill-card {
@@ -773,7 +779,7 @@ button:focus-visible {
   .hero-visual { order: -1; max-width: 420px; margin: 0 auto; }
 
   .about-grid { grid-template-columns: 1fr; gap: 36px; }
-  .skills-grid { grid-template-columns: repeat(2, 1fr); }
+  .skill-card { flex: 1 1 calc(50% - 20px); max-width: calc(50% - 20px); }
   .projects-grid { grid-template-columns: 1fr; }
 
   .ledger-row { grid-template-columns: 1fr; gap: 8px; }
@@ -805,7 +811,7 @@ button:focus-visible {
   .hero-cta { flex-direction: column; }
   .hero-kpis { flex-wrap: wrap; row-gap: 20px; }
 
-  .skills-grid { grid-template-columns: 1fr; }
+  .skill-card { flex: 1 1 100%; max-width: 100%; }
 
   .footer-inner { flex-direction: column; gap: 6px; align-items: flex-start; }
 }
