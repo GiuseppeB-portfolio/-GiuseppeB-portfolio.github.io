@@ -213,91 +213,145 @@
     <section class="section projects" id="progetti">
       <div class="container">
         <p class="section-tag reveal">/ progetti</p>
-        <h2 class="reveal">Un paio di cose che ho costruito.</h2>
-        <p class="section-intro reveal">Altri progetti — inclusa una raccolta di analisi in Excel — sono in lavorazione e arriveranno su GitHub a breve.</p>
+        <h2 class="reveal">Progetti in evidenza.</h2>
 
-        <div class="projects-grid">
+        <div class="project-filters reveal">
+          <button class="filter-btn active" data-filter="all">Tutti</button>
+          <button class="filter-btn" data-filter="ml">Machine Learning</button>
+          <button class="filter-btn" data-filter="analisi-dati">Analisi Dati</button>
+          <button class="filter-btn" data-filter="data-viz">Data Visualization</button>
+          <button class="filter-btn" data-filter="full-stack">Full Stack</button>
+          <button class="filter-btn" data-filter="agenti-ai">Agenti AI</button>
+        </div>
 
-          <!-- PROGETTO 1 — Power BI -->
-          <article class="project-card reveal">
-            <div class="project-visual">
-              <!-- Placeholder grafico: da sostituire con screenshot reale in assets/img/powerbi-analisi-finanziaria.png -->
-              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect width="400" height="220" fill="var(--color-bg-alt)"></rect>
-                <g stroke="var(--color-line)" stroke-width="1">
-                  <line x1="30" y1="30" x2="30" y2="180"></line>
-                  <line x1="30" y1="180" x2="370" y2="180"></line>
-                </g>
-                <g fill="var(--color-teal)">
-                  <rect x="55" y="110" width="34" height="70"></rect>
-                  <rect x="110" y="80" width="34" height="100"></rect>
-                  <rect x="165" y="130" width="34" height="50"></rect>
-                </g>
-                <g fill="var(--color-amber)">
-                  <rect x="220" y="60" width="34" height="120"></rect>
-                  <rect x="275" y="95" width="34" height="85"></rect>
-                  <rect x="330" y="45" width="34" height="135"></rect>
-                </g>
-                <line x1="30" y1="140" x2="370" y2="100" stroke="var(--color-ink)" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5"></line>
-              </svg>
-            </div>
+        <div class="projects-grid reveal">
+
+          <!-- Machine Learning -->
+          <article class="project-card" data-category="ml">
             <div class="project-body">
-              <h3>Analisi Finanziaria e Revenue in Power BI</h3>
-              <p>Dashboard con modellazione dati avanzata, misure DAX personalizzate (margine reale, raggiungimento budget, scostamenti, simulazioni di prezzo, CAGR) e attività ETL per la gestione dei dati mancanti. Include una nota esplicativa sulle scelte progettuali e le criticità affrontate.</p>
-              <ul class="tag-list tag-list-compact">
-                <li>Power BI</li>
-                <li>DAX</li>
-                <li>Power Query</li>
-                <li>ETL</li>
+              <h3>Progressione del diabete — Ridge Regression</h3>
+              <ul class="project-tags">
+                <li>Python</li>
+                <li>scikit-learn</li>
+                <li>pandas</li>
               </ul>
-              <a href="https://github.com/GiuseppeB-portfolio/powerbi-analisi-finanziaria" target="_blank" rel="noopener noreferrer" class="project-link">
-                Vedi su GitHub
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
+              <p>Un modello di regressione regolarizzata per stimare la progressione della malattia a 12 mesi, con la scelta del modello guidata dall'EDA e validazione senza data leakage.</p>
+              <a href="https://github.com/GiuseppeB-portfolio/Progressione-del-diabete-a-12-mesi-Ridge-Regression" class="project-link" target="_blank" rel="noopener">Vedi il repository →</a>
             </div>
           </article>
 
-          <!-- PROGETTO 2 — AI Debug Assistant -->
-          <article class="project-card reveal">
-            <div class="project-visual">
-              <!-- Placeholder grafico: da sostituire con screenshot reale in assets/img/ai-debug-assistant.png -->
-              <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect width="400" height="220" fill="var(--color-bg-alt)"></rect>
-                <rect x="30" y="30" width="340" height="160" rx="6" fill="var(--color-ink)"></rect>
-                <circle cx="48" cy="46" r="4" fill="var(--color-amber)"></circle>
-                <circle cx="62" cy="46" r="4" fill="var(--color-teal)"></circle>
-                <circle cx="76" cy="46" r="4" fill="var(--color-line)"></circle>
-                <g fill="none" stroke="var(--color-teal)" stroke-width="2" stroke-linecap="round">
-                  <line x1="48" y1="72" x2="150" y2="72"></line>
-                  <line x1="48" y1="90" x2="220" y2="90" opacity="0.6"></line>
-                  <line x1="48" y1="108" x2="120" y2="108" opacity="0.6"></line>
-                </g>
-                <g fill="none" stroke="var(--color-amber)" stroke-width="2" stroke-linecap="round">
-                  <line x1="48" y1="134" x2="260" y2="134"></line>
-                  <line x1="48" y1="152" x2="180" y2="152" opacity="0.7"></line>
-                </g>
-                <rect x="48" y="168" width="8" height="14" fill="#F1F3F1" class="cursor-blink"></rect>
-              </svg>
-            </div>
+          <article class="project-card" data-category="ml">
             <div class="project-body">
-              <h3>AI Debug Assistant</h3>
-              <p>Applicazione che sfrutta l'API Gemini per trasformare frammenti di codice con errori in soluzioni chiare e spiegate: identifica errori di sintassi e logici, restituisce il codice corretto e motiva ogni modifica, con l'obiettivo di velocizzare troubleshooting e code review.</p>
-              <ul class="tag-list tag-list-compact">
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>Gemini API</li>
+              <h3>Retail Analytics Toolkit</h3>
+              <ul class="project-tags">
+                <li>Python</li>
+                <li>scikit-learn</li>
+                <li>XGBoost</li>
+                <li>statsmodels</li>
               </ul>
-              <a href="https://github.com/GiuseppeB-portfolio/Python-debud-assistant" target="_blank" rel="noopener noreferrer" class="project-link">
-                Vedi su GitHub
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 11L11 3M11 3H4M11 3V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
+              <p>Quattro domande di business, quattro tecniche di ML a confronto: regressione, classificazione, clustering e time series forecasting su dati retail.</p>
+              <a href="https://github.com/GiuseppeB-portfolio/Retail-Analytics-Toolkit" class="project-link" target="_blank" rel="noopener">Vedi il repository →</a>
+            </div>
+          </article>
+
+          <!-- Analisi Dati -->
+          <article class="project-card" data-category="analisi-dati">
+            <div class="project-body">
+              <h3>Marketing Mix Analysis</h3>
+              <ul class="project-tags">
+                <li>Python</li>
+                <li>pandas</li>
+                <li>Plotly</li>
+              </ul>
+              <p>Analisi dell'efficacia di 7 canali di marketing, tradotta in una proposta operativa di allocazione budget per una no-profit.</p>
+              <a href="https://github.com/GiuseppeB-portfolio/marketing-mix-analysis" class="project-link" target="_blank" rel="noopener">Vedi il repository →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="analisi-dati">
+            <div class="project-body">
+              <h3>Analisi SQL multi-paese — Sviluppo sostenibile</h3>
+              <ul class="project-tags">
+                <li>SQL</li>
+                <li>PostgreSQL</li>
+              </ul>
+              <p>Otto query progressive su indicatori globali di sviluppo, da un pattern staging → view fino a un'analisi multivariata per quartili di reddito.</p>
+              <a href="https://github.com/GiuseppeB-portfolio/Analisi_SQL_multi_paese_su_indicatori_globali_di_sviluppo_sostenibile" class="project-link" target="_blank" rel="noopener">Vedi il repository →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="analisi-dati">
+            <div class="project-body">
+              <h3>Analisi vendite e-commerce plant-based</h3>
+              <ul class="project-tags">
+                <li>Excel</li>
+                <li>Pivot table</li>
+              </ul>
+              <p>20 quesiti su un dataset di vendite, tra funzioni condizionali, VLOOKUP e tabelle pivot, per un e-commerce alimentare sostenibile.</p>
+              <a href="https://github.com/GiuseppeB-portfolio/ecommerce-plantbased" class="project-link" target="_blank" rel="noopener">Vedi il repository →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="analisi-dati">
+            <div class="project-body">
+              <h3>Analisi Airbnb — Turismo sostenibile</h3>
+              <ul class="project-tags">
+                <li>Excel Advanced</li>
+                <li>Pivot table</li>
+              </ul>
+              <p>Analisi di 999 prenotazioni per orientare una strategia di marketing verso città e clienti a basso impatto ambientale.</p>
+              <a href="https://github.com/GiuseppeB-portfolio/turismo-sostenibile" class="project-link" target="_blank" rel="noopener">Vedi il repository →</a>
+            </div>
+          </article>
+
+          <!-- Data Visualization -->
+          <article class="project-card" data-category="data-viz">
+            <div class="project-body">
+              <h3>World Happiness 2015–2019</h3>
+              <ul class="project-tags">
+                <li>Tableau</li>
+                <li>LOD expressions</li>
+              </ul>
+              <p>Quattro dashboard narrative (dove, come, perché, strategia) sulla felicità globale, con calcoli avanzati e correlazioni ricalcolate in-viz.</p>
+              <a href="https://public.tableau.com/views/WorldHappinessReport2015-2019AnalisieStrategia/Dove" class="project-link" target="_blank" rel="noopener">Vedi la dashboard live →</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="data-viz">
+            <div class="project-body">
+              <h3>Analisi finanziaria — Power BI</h3>
+              <ul class="project-tags">
+                <li>Power BI</li>
+                <li>DAX</li>
+              </ul>
+              <p>Dashboard con modellazione dati avanzata, misure DAX personalizzate (margine, budget, target) e simulazioni sull'impatto dei prezzi.</p>
+              <a href="https://github.com/GiuseppeB-portfolio/powerbi-analisi-finanziaria" class="project-link" target="_blank" rel="noopener">Vedi il repository →</a>
+            </div>
+          </article>
+
+          <!-- Full Stack -->
+          <article class="project-card" data-category="full-stack">
+            <div class="project-body">
+              <h3>Owly Content Manager</h3>
+              <ul class="project-tags">
+                <li>Python</li>
+                <li>OOP</li>
+              </ul>
+              <p>Componente backend per la gestione di contenuti didattici: CRUD completo, ricerca e statistiche, con architettura a tre livelli separati.</p>
+              <a href="https://github.com/GiuseppeB-portfolio/owly-content-manager" class="project-link" target="_blank" rel="noopener">Vedi il repository →</a>
             </div>
           </article>
 
         </div>
+
+        <!-- Stato vuoto per categorie non ancora popolate -->
+        <div class="projects-empty" data-category="agenti-ai" style="display: none;">
+          Ancora nessun progetto in questa categoria.
+          <span>→ arriveranno con l'avanzare del master</span>
+        </div>
+
       </div>
     </section>
-
   <!-- ===================== FORMAZIONE ===================== -->
     <section class="section education" id="formazione">
       <div class="container">
