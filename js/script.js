@@ -141,3 +141,35 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+/* ------------------------ Filtri sezione Progetti ------------------------ */
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+  const emptyStates = document.querySelectorAll('.projects-empty');
+
+  if (filterBtns.length && projectCards.length) {
+    filterBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+
+        filterBtns.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        let anyVisible;
+
+        projectCards.forEach((card) => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          card.style.display = match ? '' : 'none';
+        });
+
+        // Mostra il messaggio di "categoria in arrivo" solo se il filtro
+        // selezionato non ha nessuna card corrispondente
+        emptyStates.forEach((empty) => {
+          const category = empty.dataset.category;
+          anyVisible = [...projectCards].some(
+            (card) => card.dataset.category === category
+          );
+          empty.style.display = (filter === category && !anyVisible) ? '' : 'none';
+        });
+      });
+    });
+  }

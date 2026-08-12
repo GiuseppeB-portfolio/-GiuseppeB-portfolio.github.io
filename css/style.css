@@ -573,6 +573,70 @@ button:focus-visible {
   gap: 9px;
 }
 
+/* ----------------------------- 9b. FILTRI PROGETTI --------------------------- */
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-ink-soft);
+  background: var(--color-card);
+  border: 1px solid var(--color-line);
+  padding: 9px 16px;
+  border-radius: 20px;
+  transition: color 0.2s var(--ease), background 0.2s var(--ease), border-color 0.2s var(--ease);
+}
+.filter-btn:hover {
+  border-color: var(--color-line-strong);
+  color: var(--color-ink);
+}
+.filter-btn.active {
+  background: var(--color-ink);
+  border-color: var(--color-ink);
+  color: var(--color-bg);
+}
+
+/* Tag tecnologici dentro le card progetto */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.project-tags li {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  background: var(--color-bg-alt);
+  color: var(--color-teal-dark);
+  padding: 4px 9px;
+  border-radius: 4px;
+}
+
+/* Stato vuoto per categorie non ancora popolate */
+.projects-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px 24px;
+  color: var(--color-ink-soft);
+  font-size: 14.5px;
+  border: 1px dashed var(--color-line-strong);
+  border-radius: var(--radius-m);
+}
+.projects-empty span {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-teal-dark);
+  margin-top: 6px;
+}
+
 /* ----------------------------- 10. ESPERIENZA (ledger) ---------------------- */
 .ledger {
   border-top: 1px solid var(--color-line);
