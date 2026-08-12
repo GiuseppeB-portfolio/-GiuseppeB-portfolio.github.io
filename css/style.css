@@ -435,6 +435,18 @@ button:focus-visible {
   color: var(--color-ink);
   line-height: 1.5;
 }
+/* ----------------------------- Sezione "Chi sono" testo in orizzontale -------------------------------- */
+.about-text {
+  max-width: 68ch;
+}
+
+.about-text p {
+  font-size: 16.5px;
+  color: var(--color-ink-soft);
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+.about-text p:last-child { margin-bottom: 24px; }
 
 /* ----------------------------- 8. COMPETENZE -------------------------------- */
 .skills-grid {
